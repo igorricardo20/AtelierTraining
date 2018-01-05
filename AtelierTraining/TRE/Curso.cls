@@ -24,6 +24,8 @@ ClassMethod RecuperaCursoPorNome(pNome As %String) As TRE.Curso
 	}
 	Catch(e)
 	{
+		Set tError = $System.Error.FromException(e)
+		Set tSC = $System.Status.Error(-1,tErro.Message)
 	}
 	Quit tCurso
 }
