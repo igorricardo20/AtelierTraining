@@ -16,7 +16,7 @@ Parameter NAMESPACE = "http://tempuri.org";
 Method RecuperaCursoPorNome(pNome As %String) As %String [ WebMethod ]
 {
 	Set tSC=..ProcessInput(pNome,.tResponse)
-	If $$$ISERR(tSC) Do ..ReturnMethodStatusFault(tSC)
+	If $$$ISERR(tSC) Do ..ReturnMethodStatusFault(tSC) g
 	Quit tSC_"-"_tResponse.Nome
 }
 
