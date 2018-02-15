@@ -9,7 +9,7 @@ Property Duracao As %String;
 
 ClassMethod RecuperaCursoPorNome(pNome As %String) As TRE.Curso
 {
-	//Comentario para teste
+	//Comentario para teste again
 	Set tSC = $$$OK
 	Hang 10 Break
 	Try
