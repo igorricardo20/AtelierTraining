@@ -17,7 +17,7 @@ ClassMethod RecuperaCursoPorNome(pNome As %String) As TRE.Curso
 		Set tRS = ##Class(%ResultSet).%New()
 		Set tSQL = "Select ID From TRE.Curso Where Nome=?"
 		Set tSC = tRS.Prepare(tSQL)
-		Set tSC = tRS.Execute(pNome)
+		Set tSC = tRS.Execute(pCurso.Nome)
 		If tRS.%Next()
 		{
 			Set tCurso = ##Class(TRE.Curso).%OpenId(tRS.GetData(1))
