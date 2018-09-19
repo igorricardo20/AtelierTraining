@@ -1,12 +1,7 @@
 /// 
 Class ACSC.ConsumoDiario.BP.HSC.Process Extends Ens.BusinessProcessBPL [ ClassType = persistent, ProcedureBlock ]
 {
-
-Storage Default
-{
-<Type>%Library.CacheStorage</Type>
-}
-
+///Xdata dos Mapas em XML
 /// BPL Definition
 XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 {
@@ -776,6 +771,11 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 </code>
 </sequence>
 </process>
+}
+
+Storage Default
+{
+<Type>%Library.CacheStorage</Type>
 }
 
 }
