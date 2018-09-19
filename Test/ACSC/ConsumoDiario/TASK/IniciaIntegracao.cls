@@ -13,7 +13,7 @@ Property IdCompany As %String(MAXLEN = "") [ InitialExpression = "100:7,225:3,23
 Method OnTask() As %Status
 {
 	#DIM pBS As Ens.BusinessService	
-
+	//teste2
 	;Garante que casas sejam processadas independente de terem sido cadastradas com vígula (,) ou ponto e vírgula(;)
 	SET tCompanyIdList = $REPLACE(..IdCompany,",",";")
 
